@@ -59,6 +59,9 @@
 
 .social-link {
     display: flex;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 
 .social-link .link {
@@ -66,19 +69,15 @@
     color: var(--social-icons-color);
     padding: 12px;
     border-radius: 50%;
+
+    &:hover,
+    &:focus {
+        color: #FFFFFF;
+        background-color: var(--accent-color);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .social-link svg {
     fill: currentColor;
-}
-
-.social-link .link:hover,
-.social-link .link:focus {
-    color: #FFFFFF;
-    background-color: var(--accent-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-link:not(:last-child) {
-    margin-right: 10px;
 }
