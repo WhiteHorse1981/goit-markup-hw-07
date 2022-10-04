@@ -1,0 +1,48 @@
+.business-title {
+    text-align: center;
+}
+
+.business-title,
+.title {
+    color: var(--title-text-color);
+}
+
+.solutions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.solutions .item {
+    width: calc((100% - 90px) / 4);
+}
+
+.solutions .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.solutions h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.solutions p {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.advantage {
+    padding: 25px 100px;
+    background-color: var(--additional-background);
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.business {
+    padding-top: 94px;
+}
