@@ -1,5 +1,6 @@
 @import "./utils/vars";
 @import "./utils/visually-hidden";
+@import "./utils/mixins";
 
 @import "./base/_base";
 @import "./base/container";
@@ -9,9 +10,7 @@
 @import "./components/footer";
 @import "./components/logo";
 @import "./components/modal-btn-close";
-@import "./components/form-btn";
 @import "./components/form-modal";
-@import "./components/filter-button-portfolio-projects";
 
 
 @import "./layout/hero";

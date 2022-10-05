@@ -3,8 +3,11 @@
     ;
 }
 
-.team h2,
-.profile h2 {
+.profile__title {
+    color: var(--title-text-color);
+}
+
+.profile__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -12,33 +15,35 @@
     letter-spacing: 0.03em;
 }
 
-.profile h2 {
+.profile__title {
     margin-bottom: 50px;
 }
 
-.examples {
+.profile__list {
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.examples .item {
+.profile__item {
     width: calc((100% - 60px) / 3);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.examples .item:not(:last-child) {
-    margin-right: 30px;
-}
 
-.examples-img {
+
+.profile__img {
     display: block;
 }
 
-.examples-img-container {
+.profile__container-img {
     position: relative;
 }
 
-.examples-img-text {
+.profile__text {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,8 +1,6 @@
-header .site-nav,
-header .contacts-header {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+.page-header__list,
+.page-header__list {
+    @include font(14px, 500, 16px);
     letter-spacing: 0.02em;
 }
 
@@ -21,25 +19,25 @@ header .contacts-header {
     justify-content: space-between;
 }
 
-.nav {
+.page-header__nav {
     display: flex;
     align-items: center;
 }
 
-.site-nav {
+.page-header__list {
     display: flex;
     margin-left: 93px;
 }
 
-.site-nav .item:not(:last-child) {
+.page-header__list .page-header__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.current {
+.page-header__link_current {
     position: relative;
 }
 
-.site-nav .current::after {
+.page-header__list .page-header__link_current::after {
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -51,15 +49,19 @@ header .contacts-header {
     border-radius: 2px;
 }
 
-.contacts-header {
+
+// contacts-header
+
+.page-header__contacts-list {
     display: flex;
 }
 
-.contacts-header .item:not(:last-child) {
+.page-header__contacts-item:not(:last-child) {
     margin-right: 50px;
 }
 
-.site-nav .link {
+.page-header__link {
+    color: var(--title-text-color);
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -67,7 +69,21 @@ header .contacts-header {
 
 }
 
-.contacts-header a {
+.page-header__link:hover, .page-header__link:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.page-header__contacts-list .page-header__contacts-link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
     color: var(--primary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -78,7 +94,7 @@ header .contacts-header {
     }
 }
 
-.link {
+.nav__link {
     color: var(--title-text-color);
     text-decoration: none;
 
@@ -91,16 +107,13 @@ header .contacts-header {
 
 
 
-.site-nav .link.current {
+.page-header__list.nav__link_current {
     color: #2196F3;
 }
 
-.contacts-icon {
+.page-header__contacts-icon {
     fill: currentColor;
     margin-right: 10px;
 }
 
-.contacts-header .link {
-    display: flex;
-}
 

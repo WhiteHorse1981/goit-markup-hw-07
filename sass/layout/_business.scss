@@ -1,27 +1,26 @@
-.business-title {
-    text-align: center;
+.hidden__title {
+    text-align: center;  
 }
 
-.business-title,
-.title {
+.business__title {
     color: var(--title-text-color);
 }
 
-.solutions {
+.business__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.solutions .item {
+.business__list .business__item {
     width: calc((100% - 90px) / 4);
 }
 
-.solutions .item:not(:last-child) {
+.business__list .business__item:not(:last-child) {
     margin-right: 30px;
 }
 
 
-.solutions h3 {
+.business__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -30,13 +29,13 @@
     margin-bottom: 10px;
 }
 
-.solutions p {
+.business__description {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.advantage {
+.business__advantage {
     padding: 25px 100px;
     background-color: var(--additional-background);
     margin-bottom: 30px;
